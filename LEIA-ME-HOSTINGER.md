@@ -11,7 +11,8 @@ almare-website/
 ├── quem-somos.html                             → Quem Somos
 ├── empreendimentos.html                        → Listagem de empreendimentos
 ├── empreendimentos/
-│   └── almare-muta-residence.html              → Página do Almare Mutá Residence
+│   ├── almare-muta-residence.html              → Página do Almare Mutá Residence
+│   └── estudios-vista-panorama.html            → Página dos Estúdios Vista Panorama
 ├── contato.html                                → Contato (formulário + WhatsApp)
 ├── obrigado.html                                → Página de agradecimento (pós-formulário)
 ├── 404.html                                     → Página de erro personalizada
@@ -20,7 +21,7 @@ almare-website/
     ├── css/style.css                            → Todo o visual do site
     ├── js/main.js                               → Menu, galeria, vídeo, animações
     ├── img/                                      → Fotos otimizadas (4 tamanhos cada)
-    └── video/almare-muta-apresentacao.mp4        → Vídeo institucional (comprimido)
+    └── video/                                    → Vídeos institucionais (comprimidos)
 ```
 
 O site é 100% HTML/CSS/JS estático — não precisa de banco de dados, PHP ou Node.
@@ -94,7 +95,8 @@ redirecionado à página de agradecimento após enviar o formulário.
 
 ### b) Domínio nos arquivos de SEO
 Os arquivos `robots.txt`, `sitemap.xml` e o bloco de dados estruturados no
-topo de `empreendimentos/almare-muta-residence.html` têm o texto
+topo de `empreendimentos/almare-muta-residence.html` e de
+`empreendimentos/estudios-vista-panorama.html` têm o texto
 `SEUDOMINIO.com.br` como placeholder. Troque pelo domínio real assim que
 ele estiver ativo no Hostinger.
 
@@ -115,28 +117,36 @@ oficiais, me avisem ou peça para o desenvolvedor adicionar.
 
 ## 5. Como adicionar um novo empreendimento no futuro
 
-A estrutura já foi pensada para crescer:
-1. Duplique o arquivo `empreendimentos/almare-muta-residence.html` e
-   renomeie (ex.: `empreendimentos/vista-panorama.html`).
-2. Troque textos, fotos e a tabela de condições comerciais.
-3. Adicione um novo `.dev-card` em `empreendimentos.html` (copie o bloco
-   existente do Almare Mutá e ajuste os dados) apontando para o novo
-   arquivo.
-4. Envie as novas fotos para `assets/img/` seguindo o mesmo padrão de
-   nomes (ex.: `nome-do-imovel-ambiente.jpg`).
+A estrutura já foi pensada para crescer — hoje já temos dois exemplos reais
+para usar de referência: `empreendimentos/almare-muta-residence.html` e
+`empreendimentos/estudios-vista-panorama.html`.
+
+1. Duplique um desses arquivos e renomeie (ex.: `empreendimentos/nome-do-novo.html`).
+2. Troque textos, fotos, vídeo e a tabela de condições comerciais.
+3. Adicione um novo `.dev-card` em `empreendimentos.html` **e** em `index.html`
+   (copie o bloco de um dos empreendimentos existentes e ajuste os dados)
+   apontando para o novo arquivo.
+4. Adicione o link do novo empreendimento na lista "Empreendimentos" do
+   rodapé, em todas as páginas (é o mesmo bloco `<li><a href="...">` repetido).
+5. Envie as novas fotos para `assets/img/` seguindo o mesmo padrão de
+   nomes (ex.: `nome-do-imovel-ambiente.jpg`), e o vídeo para `assets/video/`.
+6. Se o empreendimento passar a fazer parte do "em breve" da seção
+   "Em expansão" (`index.html` e `empreendimentos.html`), remova a cidade
+   correspondente dos chips de "novos lançamentos".
 
 Me envie o material do próximo empreendimento (fotos + PDF de vendas) que
-eu monto a página completa do mesmo jeito que fiz com o Almare Mutá.
+eu monto a página completa do mesmo jeito que fiz com os outros dois.
 
 ---
 
 ## 6. Observações técnicas
 
-- **Vídeo institucional:** o arquivo original (158 MB) foi comprimido para
-  ~15 MB mantendo boa qualidade, e só carrega quando o visitante clica em
-  "play" (não consome dados à toa). Para ainda mais performance no futuro,
-  considere subir o vídeo no YouTube (modo "não listado") ou Vimeo e trocar
-  o player por um embed — é só avisar que eu ajusto.
+- **Vídeos institucionais:** os arquivos originais (158 MB e 217 MB) foram
+  comprimidos para ~15 MB e ~27 MB mantendo boa qualidade, e só carregam
+  quando o visitante clica em "play" (não consomem dados à toa). Para ainda
+  mais performance no futuro, considere subir os vídeos no YouTube (modo
+  "não listado") ou Vimeo e trocar o player por um embed — é só avisar que
+  eu ajusto.
 - **Fontes:** o site usa Google Fonts (Fraunces + Jost), carregadas
   automaticamente pela internet — não precisa instalar nada no servidor.
 - **Certificado SSL:** ative o SSL gratuito do Hostinger (hPanel →
@@ -154,6 +164,6 @@ eu monto a página completa do mesmo jeito que fiz com o Almare Mutá.
 - [ ] E-mail do formulário de contato trocado e confirmado
 - [ ] Testado o botão do WhatsApp em um celular
 - [ ] Testado o formulário de contato (envio de teste)
-- [ ] `SEUDOMINIO.com.br` substituído em robots.txt, sitemap.xml e na
-      página do Almare Mutá
+- [ ] `SEUDOMINIO.com.br` substituído em robots.txt, sitemap.xml e nas
+      páginas do Almare Mutá e do Vista Panorama
 - [ ] Conferido o site no celular (menu, galeria, formulário)

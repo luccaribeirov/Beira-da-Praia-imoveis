@@ -28,11 +28,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container">
     <a href="index.html" class="brand" aria-label="Beira da Praia Incorporadora — página inicial">
-      <svg class="brand-mark" viewBox="0 0 40 30" aria-hidden="true">
-        <path d="M6 19a14 14 0 0 1 28 0" fill="none" stroke="#d4b878" stroke-width="1.7" stroke-linecap="round"/>
-        <line x1="2" y1="19" x2="38" y2="19" stroke="#bf9a56" stroke-width="1.3"/>
-        <path d="M3 25c3.5-2.2 7-2.2 10.5 0s7 2.2 10.5 0 7-2.2 10.5 0" fill="none" stroke="#bf9a56" stroke-width="1.3"/>
-      </svg>
+      <img class="brand-mark" src="assets/img/brand/beira-da-praia-icon.png" alt="Beira da Praia Incorporadora">
       <span class="brand-word"><b>Beira da Praia</b><span>Incorporadora</span></span>
     </a>
 
@@ -67,10 +63,17 @@
 <!-- ==================== HERO ==================== -->
 <section class="hero">
   <div class="hero-media">
-    <img src="assets/img/almare-aerea-vista-mar.jpg" alt="Vista aérea de condomínio de alto padrão com piscina e mar ao fundo, no litoral da Bahia" width="1920" height="1280">
+    <img
+      src="assets/img/hero-litoral-por-do-sol.jpg"
+      srcset="assets/img/hero-litoral-por-do-sol-sm.jpg 480w, assets/img/hero-litoral-por-do-sol-md.jpg 800w, assets/img/hero-litoral-por-do-sol-lg.jpg 1200w, assets/img/hero-litoral-por-do-sol.jpg 1536w"
+      sizes="100vw"
+      alt="Litoral brasileiro ao pôr do sol, com vegetação nativa e casas entre as árvores até a orla"
+      width="1536" height="1024">
+  </div>
+  <div class="container hero-kicker">
+    <p class="eyebrow">Incorporadora de alto padrão · Litoral brasileiro</p>
   </div>
   <div class="container hero-content">
-    <p class="eyebrow">Incorporadora de alto padrão · Litoral brasileiro</p>
     <h1>Viver à beira do horizonte mais desejado do Brasil.</h1>
     <p class="lede">Há 15 anos, projetamos residências e condomínios exclusivos nos destinos litorâneos mais valorizados do país — de Porto Seguro a Balneário Camboriú.</p>
     <div class="hero-actions">
@@ -140,7 +143,7 @@
 
     <div class="dev-card reveal">
       <div class="dev-card-media">
-        <img src="assets/img/almare-fachada-frontal-lg.jpg" alt="Fachada do Almare Mutá Residence ao entardecer" loading="lazy">
+        <img src="assets/img/almare-piscina-gourmet-lg.jpg" alt="Piscina e espaço gourmet do Almare Mutá Residence ao entardecer" loading="lazy">
         <span class="dev-card-badge">Lançamento</span>
       </div>
       <div class="dev-card-body">
@@ -163,12 +166,37 @@
       </div>
     </div>
 
+    <div class="dev-card reveal" style="margin-top:36px;">
+      <div class="dev-card-media">
+        <img src="assets/img/vista-panorama-fachada-vista-mar-lg.jpg" alt="Fachada dos Estúdios Vista Panorama com vista para o mar" loading="lazy">
+        <span class="dev-card-badge">Em breve</span>
+      </div>
+      <div class="dev-card-body">
+        <span class="place">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg>
+          Arraial d'Ajuda · Bahia
+        </span>
+        <h3>Estúdios Vista Panorama</h3>
+        <p class="body-text">40 estúdios exclusivos com vista permanente para o mar, restaurante autoral e piscina panorâmica — a poucos minutos do Centro Histórico de Arraial d'Ajuda.</p>
+        <div class="dev-specs">
+          <div class="spec"><b>40</b><span>Estúdios exclusivos</span></div>
+          <div class="spec"><b>30 m²</b><span>Área aproximada</span></div>
+          <div class="spec"><b>100%</b><span>Com vista para o mar</span></div>
+          <div class="spec"><b>36x</b><span>Pagamento facilitado</span></div>
+        </div>
+        <div class="dev-card-actions">
+          <a href="empreendimentos/estudios-vista-panorama.html" class="btn btn-gold">Conhecer o empreendimento</a>
+          <a href="https://wa.me/5573988050835?text=Ol%C3%A1!%20Tenho%20interesse%20nos%20Est%C3%BAdios%20Vista%20Panorama%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20valores%20e%20condi%C3%A7%C3%B5es%20de%20pagamento." target="_blank" rel="noopener" class="btn btn-outline-dark">Falar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
     <div class="soon-strip reveal">
       <p class="eyebrow" style="justify-content:center;">Em expansão</p>
       <h3 style="margin-top:16px;">Novos lançamentos a caminho.</h3>
       <p class="body-text" style="max-width:56ch; margin:14px auto 0;">Estamos com novos projetos em estudo e desenvolvimento em outros endereços litorâneos de alto padrão. Fale com a gente para ser avisado em primeira mão.</p>
       <div class="cities-row">
-        <span class="city-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/></svg>Arraial d'Ajuda</span>
+        <span class="city-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/></svg>Porto Seguro</span>
         <span class="city-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/></svg>Trancoso</span>
         <span class="city-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/></svg>Caraíva</span>
         <span class="city-chip"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/></svg>Balneário Camboriú</span>
@@ -236,11 +264,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <svg class="brand-mark" viewBox="0 0 40 30" aria-hidden="true">
-            <path d="M6 19a14 14 0 0 1 28 0" fill="none" stroke="#d4b878" stroke-width="1.7" stroke-linecap="round"/>
-            <line x1="2" y1="19" x2="38" y2="19" stroke="#bf9a56" stroke-width="1.3"/>
-            <path d="M3 25c3.5-2.2 7-2.2 10.5 0s7 2.2 10.5 0 7-2.2 10.5 0" fill="none" stroke="#bf9a56" stroke-width="1.3"/>
-          </svg>
+          <img class="brand-mark" src="assets/img/brand/beira-da-praia-icon.png" alt="Beira da Praia Incorporadora">
           <span class="brand-word"><b>Beira da Praia</b><span>Incorporadora</span></span>
         </a>
         <p>Empreendimentos que unem localização, arquitetura e valorização patrimonial nos destinos litorâneos mais desejados do Brasil.</p>
@@ -250,6 +274,7 @@
         <h4>Empreendimentos</h4>
         <ul>
           <li><a href="empreendimentos/almare-muta-residence.html">Almare Mutá Residence</a></li>
+          <li><a href="empreendimentos/estudios-vista-panorama.html">Estúdios Vista Panorama</a></li>
           <li><span>Novos lançamentos em breve</span></li>
         </ul>
       </div>

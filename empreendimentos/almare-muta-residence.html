@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Almare Mutá Residence | Praia do Mutá, Porto Seguro | Beira da Praia Incorporadora</title>
-<meta name="description" content="Almare Mutá Residence: condomínio exclusivo com 8 casas duplex, 2 suítes, a 400 metros da Praia do Mutá, Porto Seguro - Bahia. Unidades a partir de R$ 650.000.">
+<meta name="description" content="Almare Mutá Residence: condomínio exclusivo com 8 casas duplex, 2 suítes, a 400 metros da Praia do Mutá, Porto Seguro - Bahia. Unidades a partir de R$ 600.000.">
 <meta name="theme-color" content="#081321">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Almare Mutá Residence | Beira da Praia Incorporadora">
@@ -28,6 +28,7 @@
   "numberOfAccommodationUnits": 8,
   "address": {
     "@type": "PostalAddress",
+    "streetAddress": "Rua Três Corações, 199",
     "addressLocality": "Porto Seguro",
     "addressRegion": "BA",
     "addressCountry": "BR"
@@ -42,11 +43,7 @@
 <header class="site-header" id="siteHeader">
   <div class="container">
     <a href="../index.html" class="brand" aria-label="Beira da Praia Incorporadora — página inicial">
-      <svg class="brand-mark" viewBox="0 0 40 30" aria-hidden="true">
-        <path d="M6 19a14 14 0 0 1 28 0" fill="none" stroke="#d4b878" stroke-width="1.7" stroke-linecap="round"/>
-        <line x1="2" y1="19" x2="38" y2="19" stroke="#bf9a56" stroke-width="1.3"/>
-        <path d="M3 25c3.5-2.2 7-2.2 10.5 0s7 2.2 10.5 0 7-2.2 10.5 0" fill="none" stroke="#bf9a56" stroke-width="1.3"/>
-      </svg>
+      <img class="brand-mark" src="../assets/img/brand/beira-da-praia-icon.png" alt="Beira da Praia Incorporadora">
       <span class="brand-word"><b>Beira da Praia</b><span>Incorporadora</span></span>
     </a>
     <nav class="nav-desktop" aria-label="Navegação principal">
@@ -79,7 +76,11 @@
 <!-- ==================== PAGE HERO ==================== -->
 <section class="page-hero">
   <div class="hero-media">
-    <img src="../assets/img/almare-fachada-frontal.jpg" alt="Fachada frontal do Almare Mutá Residence ao entardecer" width="1536" height="1024">
+    <img
+      src="../assets/img/almare-aerea-vista-mar.jpg"
+      srcset="../assets/img/almare-aerea-vista-mar-sm.jpg 480w, ../assets/img/almare-aerea-vista-mar-md.jpg 800w, ../assets/img/almare-aerea-vista-mar-lg.jpg 1200w, ../assets/img/almare-aerea-vista-mar.jpg 1536w"
+      sizes="100vw"
+      alt="Vista aérea do Almare Mutá Residence com piscina e o mar ao fundo, na Praia do Mutá" width="1536" height="1024">
   </div>
   <div class="container hero-content">
     <div class="breadcrumb">
@@ -89,6 +90,27 @@
     </div>
     <p class="eyebrow">Lançamento · Praia do Mutá, Porto Seguro — Bahia</p>
     <h1>Almare Mutá Residence</h1>
+  </div>
+</section>
+
+<!-- ==================== VÍDEO ==================== -->
+<section class="section on-sand-100">
+  <div class="container">
+    <div class="section-head center reveal">
+      <p class="eyebrow">Conheça em vídeo</p>
+      <h2>Um passeio pelo Almare Mutá Residence.</h2>
+    </div>
+    <div class="video-block reveal">
+      <video preload="none" poster="../assets/img/video-poster.jpg" playsinline controls>
+        <source src="../assets/video/almare-muta-apresentacao.mp4" type="video/mp4">
+      </video>
+      <img class="video-poster" src="../assets/img/video-poster.jpg" alt="Vídeo de apresentação do Almare Mutá Residence">
+      <button class="video-play" aria-label="Reproduzir vídeo">
+        <span class="circle">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        </span>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -257,27 +279,6 @@
   </div>
 </div>
 
-<!-- ==================== VÍDEO ==================== -->
-<section class="section on-sand-100" style="padding-top:0;">
-  <div class="container">
-    <div class="section-head center reveal">
-      <p class="eyebrow">Conheça em vídeo</p>
-      <h2>Um passeio pelo Almare Mutá Residence.</h2>
-    </div>
-    <div class="video-block reveal">
-      <video preload="none" poster="../assets/img/video-poster.jpg" playsinline controls>
-        <source src="../assets/video/almare-muta-apresentacao.mp4" type="video/mp4">
-      </video>
-      <img class="video-poster" src="../assets/img/video-poster.jpg" alt="Vídeo de apresentação do Almare Mutá Residence">
-      <button class="video-play" aria-label="Reproduzir vídeo">
-        <span class="circle">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
-        </span>
-      </button>
-    </div>
-  </div>
-</section>
-
 <!-- ==================== CONDIÇÕES COMERCIAIS ==================== -->
 <section class="section on-sand" id="condicoes">
   <div class="container">
@@ -288,22 +289,22 @@
       </div>
       <div class="pricing-from">
         <span class="lbl">Unidades a partir de</span>
-        <span class="val">R$ 650.000</span>
+        <span class="val">R$ 600.000</span>
       </div>
       <div class="pricing-grid">
         <div class="pricing-item">
           <div class="pct">Entrada · 20%</div>
-          <div class="amt">R$ 130.000</div>
+          <div class="amt">R$ 120.000</div>
           <div class="desc">Na assinatura</div>
         </div>
         <div class="pricing-item">
           <div class="pct">Parcelas mensais · 24x</div>
-          <div class="amt">R$ 10.833</div>
+          <div class="amt">R$ 10.000</div>
           <div class="desc">Mensais</div>
         </div>
         <div class="pricing-item">
           <div class="pct">Intermediárias · 4x</div>
-          <div class="amt">R$ 65.000</div>
+          <div class="amt">R$ 60.000</div>
           <div class="desc">4 intermediárias semestrais</div>
         </div>
       </div>
@@ -324,13 +325,14 @@
     <div class="grid-2 reverse">
       <div class="reveal">
         <div class="location-media">
-          <iframe src="https://www.google.com/maps?q=Praia%20do%20Mut%C3%A1%2C%20Porto%20Seguro%2C%20BA&output=embed" style="border:0; width:100%; height:100%; min-height:340px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Praia do Mutá, Porto Seguro"></iframe>
+          <iframe src="https://www.google.com/maps?q=R.%20Tr%C3%AAs%20Cora%C3%A7%C3%B5es%2C%20199%20-%20Porto%20Seguro%2C%20BA&output=embed" style="border:0; width:100%; height:100%; min-height:340px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa — Rua Três Corações, 199, Porto Seguro"></iframe>
         </div>
       </div>
       <div class="reveal reveal-delay-1">
         <p class="eyebrow">Localização</p>
         <h2>Praia do Mutá, Porto Seguro.</h2>
-        <ul class="feature-list" style="margin-top:26px;">
+        <p class="body-text" style="margin-top:14px;">Rua Três Corações, 199 — Porto Seguro, Bahia.</p>
+        <ul class="feature-list" style="margin-top:22px;">
           <li>
             <span class="ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.5 7-13a7 7 0 10-14 0c0 5.5 7 13 7 13z" stroke="currentColor" stroke-width="1.8"/></svg></span>
             <span>A aproximadamente <b>400 a 450 metros da Praia do Mutá</b>.</span>
@@ -378,11 +380,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="../index.html" class="brand">
-          <svg class="brand-mark" viewBox="0 0 40 30" aria-hidden="true">
-            <path d="M6 19a14 14 0 0 1 28 0" fill="none" stroke="#d4b878" stroke-width="1.7" stroke-linecap="round"/>
-            <line x1="2" y1="19" x2="38" y2="19" stroke="#bf9a56" stroke-width="1.3"/>
-            <path d="M3 25c3.5-2.2 7-2.2 10.5 0s7 2.2 10.5 0 7-2.2 10.5 0" fill="none" stroke="#bf9a56" stroke-width="1.3"/>
-          </svg>
+          <img class="brand-mark" src="../assets/img/brand/beira-da-praia-icon.png" alt="Beira da Praia Incorporadora">
           <span class="brand-word"><b>Beira da Praia</b><span>Incorporadora</span></span>
         </a>
         <p>Empreendimentos que unem localização, arquitetura e valorização patrimonial nos destinos litorâneos mais desejados do Brasil.</p>
@@ -391,6 +389,7 @@
         <h4>Empreendimentos</h4>
         <ul>
           <li><a href="almare-muta-residence.html">Almare Mutá Residence</a></li>
+          <li><a href="estudios-vista-panorama.html">Estúdios Vista Panorama</a></li>
           <li><span>Novos lançamentos em breve</span></li>
         </ul>
       </div>
