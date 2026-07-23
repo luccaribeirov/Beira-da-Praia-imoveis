@@ -994,6 +994,101 @@ p.body-text, .body-text{
 }
 
 /* ==========================================================================
+   Aviso promocional flutuante (toast)
+   ========================================================================== */
+.promo-toast{
+  position:fixed;
+  top:100px;
+  right:20px;
+  z-index:550;
+  width:320px;
+  max-width:calc(100vw - 40px);
+  background:var(--white);
+  border-radius:var(--radius-md);
+  box-shadow:var(--shadow-soft);
+  display:flex;
+  gap:14px;
+  padding:16px;
+  padding-right:32px;
+  transform:translateX(140%);
+  opacity:0;
+  transition:transform .6s var(--ease), opacity .6s var(--ease);
+  pointer-events:none;
+}
+.promo-toast.show{
+  transform:translateX(0);
+  opacity:1;
+  pointer-events:auto;
+}
+.promo-toast-media{
+  flex:none;
+  width:64px;
+  height:64px;
+  border-radius:10px;
+  overflow:hidden;
+}
+.promo-toast-media img{ width:100%; height:100%; object-fit:cover; display:block; }
+.promo-toast-body{ flex:1; min-width:0; }
+.promo-toast-tag{
+  display:block;
+  font-size:10.5px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--gold-600);
+  font-weight:600;
+  margin-bottom:5px;
+}
+.promo-toast-body h4{
+  font-family:var(--f-display);
+  font-size:0.98rem;
+  font-weight:500;
+  color:var(--navy-950);
+  line-height:1.25;
+  margin-bottom:5px;
+}
+.promo-toast-body p{
+  font-family:var(--f-body);
+  font-size:12.5px;
+  color:var(--ink-soft);
+  line-height:1.5;
+  margin-bottom:10px;
+}
+.promo-toast-btn{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  font-family:var(--f-body);
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:0.03em;
+  text-transform:uppercase;
+  color:var(--gold-600);
+}
+.promo-toast-btn svg{ width:12px; height:12px; transition:transform .3s ease; flex:none; }
+.promo-toast-btn:hover svg{ transform:translateX(3px); }
+.promo-toast-close{
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:22px;
+  height:22px;
+  border-radius:50%;
+  background:var(--sand-100);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:none;
+  cursor:pointer;
+  transition:background .3s ease;
+}
+.promo-toast-close:hover{ background:var(--sand-200); }
+.promo-toast-close svg{ width:10px; height:10px; color:var(--ink-soft); }
+@media(max-width:640px){
+  .promo-toast{ top:96px; right:14px; left:14px; width:auto; max-width:none; padding:14px; padding-right:30px; }
+  .promo-toast-media{ width:52px; height:52px; }
+}
+
+/* ==========================================================================
    Botão flutuante do WhatsApp
    ========================================================================== */
 .whatsapp-float{
