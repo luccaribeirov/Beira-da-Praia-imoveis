@@ -129,32 +129,25 @@
   var promoToast = document.getElementById('promoToast');
   if (promoToast) {
     var promoCloseBtn = document.getElementById('promoToastClose');
-    var PROMO_KEY = 'bp_promo_almare_dismissed';
-    var alreadyDismissed = false;
-    try { alreadyDismissed = sessionStorage.getItem(PROMO_KEY) === '1'; } catch (e) {}
+    var promoAutoHide;
+    var promoShowTimer = setTimeout(function () {
+      promoToast.classList.add('show');
+    }, 2500);
 
-    if (!alreadyDismissed) {
-      var promoAutoHide;
-      var promoShowTimer = setTimeout(function () {
-        promoToast.classList.add('show');
-      }, 2500);
+    var dismissPromo = function () {
+      promoToast.classList.remove('show');
+      clearTimeout(promoShowTimer);
+      clearTimeout(promoAutoHide);
+    };
 
-      var dismissPromo = function () {
-        promoToast.classList.remove('show');
-        clearTimeout(promoShowTimer);
-        clearTimeout(promoAutoHide);
-        try { sessionStorage.setItem(PROMO_KEY, '1'); } catch (e) {}
-      };
-
-      promoToast.addEventListener('transitionend', function (e) {
-        if (e.propertyName === 'transform' && promoToast.classList.contains('show')) {
-          promoAutoHide = setTimeout(dismissPromo, 15000);
-        }
-      });
-
-      if (promoCloseBtn) {
-        promoCloseBtn.addEventListener('click', dismissPromo);
+    promoToast.addEventListener('transitionend', function (e) {
+      if (e.propertyName === 'transform' && promoToast.classList.contains('show')) {
+        promoAutoHide = setTimeout(dismissPromo, 15000);
       }
+    });
+
+    if (promoCloseBtn) {
+      promoCloseBtn.addEventListener('click', dismissPromo);
     }
   }
 
